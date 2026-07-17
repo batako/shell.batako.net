@@ -1,0 +1,40 @@
+{
+  "name": "shell.batako.net",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "24.x",
+    "npm": "11.x"
+  },
+  "packageManager": "npm@11.16.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "npm run build && node --test tests/*.test.mjs && vitest run",
+    "test:unit": "node --test tests/shell-logic.test.mjs && vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ignore-pattern .next --ignore-pattern out --ignore-pattern dist --ignore-pattern .wrangler"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.10",
+    "jsdom": "^29.1.1",
+    "typescript": "5.9.3",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.14"
+    }
+  },
+  "type": "module"
+}

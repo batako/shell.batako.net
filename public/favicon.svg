@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="screen" x1="5" y1="3" x2="27" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10201f"/>
+      <stop offset="1" stop-color="#030706"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#020504"/>
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5" fill="url(#screen)" stroke="#416b68"/>
+  <text
+    x="5"
+    y="21.5"
+    fill="#a7c9c3"
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="16"
+    font-weight="700"
+    letter-spacing="-1"
+  >~$</text>
+</svg>
